@@ -1,0 +1,84 @@
+/* Miscellaneous Page Specific Styling */
+.misc-content-card {
+  background: var(--bg-card, #ffffff);
+  border-radius: var(--radius, 12px);
+  border: 1px solid var(--border-color, #e2e8f0);
+  box-shadow: var(--shadow, 0 4px 6px -1px rgba(0, 0, 0, 0.05));
+  padding: 3rem 2rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.misc-placeholder-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--text-muted, #64748b);
+}
+
+.misc-placeholder-box h3 {
+  color: var(--text-dark, #0f172a);
+  font-size: 1.25rem;
+}
+
+.misc-placeholder-box p {
+  max-width: 400px;
+  font-size: 0.95rem;
+}
+
+/* Navbar active state styling for Miscellaneous */
+.nav-btn.active {
+  background: #e0e7ff;
+  color: #4f46e5;
+}
+
+/* ==========================================================
+   MOBILE RESPONSIVE ADJUSTMENTS FOR MISCELLANEOUS PAGE
+   ========================================================== */
+@media (max-width: 768px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+  }
+
+  .nav-container {
+    padding: 0.75rem 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    font-size: 1.1rem;
+  }
+
+  .brand i {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 6px;
+  }
+
+  .nav-btn {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.8rem;
+    gap: 5px;
+    background: #f1f5f9;
+    border-radius: 8px;
+  }
+
+  .nav-btn span {
+    display: inline;
+  }
+
+  .misc-content-card {
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+  }
+}
